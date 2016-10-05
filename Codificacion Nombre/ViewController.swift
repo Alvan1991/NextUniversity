@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +21,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    @IBAction func nombreButton(sender: AnyObject) {
+        resultLabel.text = "Ricardo"
+    }
+    
+    
+    @IBAction func lastButton(sender: AnyObject) {
+        resultLabel.text = "Perez"
+    }
+    
+    
+    @IBAction func cityButton(sender: AnyObject) {
+        resultLabel.text = "Edo. de Mexico"
+    }
+    
+    @IBAction func countryButton(sender: AnyObject) {
+        resultLabel.text = "Mexico"
+    }
+    
 }
 
